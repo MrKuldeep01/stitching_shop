@@ -385,7 +385,7 @@ main {
   min-height: 100vh;
   padding-top: 50px;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
   background: linear-gradient(
     to bottom,
