@@ -1,238 +1,389 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mr.Tailor - A cloth stitching shop</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="web icon" href="/img/needlewebicon.png">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css"
+      integrity="sha512-HXXR0l2yMwHDrDyxJbrMD9eLvPe3z3qL3PPeozNTsiHJEENxx8DH2CxmV05iwG0dwoz5n4gQZQyYLUNt1Wdgfg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mr.Tailor - A cloth steaching shop</title>
-    <link rel="stylesheet" href="style.css">
-
-</head>
-
-<body>
+  <body>
     <section class="homeSec" id="homeSec">
-        <header>
-            <nav>
-                <div class="leftnav">
-                    <img src="/img/img2.png" alt="logo">
-                </div>
-                <div class="centernav">
-                    <a href="#homeSec">
-                        <li class="navitems">Home</li>
-                    </a>
-                    <a href="#menuSec">
-                        <li class="navitems">Menu </li>
-                    </a>
-                    <a href="#aboutSec">
-                        <li class="navitems">About Us</li>
-                    </a>
-                    <a href="#productSec">
-                        <li class="navitems">Products</li>
-                    </a>
-                    <a href="#reviewSec">
-                        <li class="navitems">Reviews</li>
-                    </a>
-                </div>
-                <div class="rightnav"><button class="login">Log in</button></div>
-            </nav>
-        </header>
-        <main>
-            <div class="lefthome">
-                <span class="homehead"> -: Tailor Shop :-</span>
-                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores doloremque iure
-                    itaque. Deserunt aliquid similique perspiciatis quam exercitationem doloribus natus ab veritatis</p>
-                <div class="btns">
-                    <button class="products">Explore Products</button>
-                    <button class="menu"> More menu</button>
-                </div>
+      <header>
+        <nav>
+          <div class="leftnav">
+            <img src="/img/clothing.png" alt="logo" />
+          </div>
+          <div class="centernav">
+            <a href="#homeSec">
+              <li class="navitems">
+                Home &nbsp;<i class="fa-brands fa-fort-awesome"></i>
+              </li>
+            </a>
+            <a href="#menuSec">
+              <li class="navitems">
+                Menu &nbsp; <i class="ri-menu-3-line"></i>
+              </li>
+            </a>
+            <a href="#aboutSec">
+              <li class="navitems">
+                About Us &nbsp;<i class="fa-solid fa-users"></i>
+              </li>
+            </a>
+            <a href="#productSec">
+              <li class="navitems">
+                Products &nbsp; <i class="ri-truck-line"></i>
+              </li>
+            </a>
+            <a href="#reviewSec">
+              <li class="navitems">
+                Reviews &nbsp; <i class="ri-message-3-line"></i>
+              </li>
+            </a>
+          </div>
+          <div class="rightnav">
+            <button class="login">
+              Log in &nbsp; <i class="fa-solid fa-user-tie"></i>
+            </button>
+            <button class="ham" onclick="showhamcontent()">
+              <i class="fa-solid fa-bars"></i>
+            </button>
+            <div class="hamcontent">
+              <button class="closehambtn">
+                <i class="fa-regular fa-circle-xmark"></i>
+              </button>
+              <a href="#homeSec">
+                <li class="navitems">Home</li>
+              </a>
+              <a href="#menuSec">
+                <li class="navitems">Menu</li>
+              </a>
+              <a href="#aboutSec">
+                <li class="navitems">About Us</li>
+              </a>
+              <a href="#productSec">
+                <li class="navitems">Products</li>
+              </a>
+              <a href="#reviewSec">
+                <li class="navitems">Reviews</li>
+              </a>
+              <button class="login">
+                Log in &nbsp;<i class="fa-solid fa-user-tie"></i>
+              </button>
             </div>
-            <div class="righthome">
-                <div class="demoimgbox">
-                    <img src="/img/img2.png" alt="demoimg">
-                </div>
-            </div>
-        </main>
+          </div>
+        </nav>
+      </header>
+      <main>
+        <div class="lefthome">
+          <span class="homehead"> Tailor Shop &nbsp; <img src="/img/sewing.png" height="35" alt=""> </span>
+          <p class="description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+            doloremque iure itaque. Deserunt aliquid similique perspiciatis quam
+            exercitationem doloribus natus ab veritatis
+          </p>
+          <div class="btns">
+            <button class="products">
+              Explore Products &nbsp;<i class="ri-search-eye-line"></i>
+            </button>
+            <button class="menu">
+              More menu &nbsp;<i class="ri-menu-3-line"></i>
+            </button>
+          </div>
+        </div>
+        <div class="righthome">
+          <div class="demoimgbox">
+            <img src="/img/img2.png" alt="demoimg" />
+          </div>
+        </div>
+      </main>
     </section>
 
     <section class="menuSec" id="menuSec">
-        <div class="menubox">
-            <h2 class="menuhead">Our Menu</h2>
-            <div class="menuitembox">
-                <div class="menuitems">
-                    <div class="productimg">
-                        <img src="/img/img4.jfif" alt="">
-                    </div>
-                    <h4 class="productname"> item one </h4>
-                    <div class=" btns">
-                        <button class="productdetails">Details</button>
-                        <button class="addbtn">Add</button>
-
-                    </div>
-                </div>
-                <div class="menuitems">
-                    <div class="productimg">
-                        <img src="/img/img4.jfif" alt="">
-                    </div>
-                    <h4 class="productname"> item one </h4>
-                    <div class=" btns">
-                        <button class="productdetails">Details</button>
-                        <button class="addbtn">Add</button>
-
-                    </div>
-                </div>
-                <div class="menuitems">
-                    <div class="productimg">
-                        <img src="/img/img4.jfif" alt="">
-                    </div>
-                    <h4 class="productname"> item one </h4>
-                    <div class=" btns">
-                        <button class="productdetails">Details</button>
-                        <button class="addbtn">Add</button>
-
-                    </div>
-                </div>
-                <div class="menuitems">
-                    <div class="productimg">
-                        <img src="/img/img4.jfif" alt="">
-                    </div>
-                    <h4 class="productname"> item one </h4>
-                    <div class=" btns">
-                        <button class="productdetails">Details</button>
-                        <button class="addbtn">Add</button>
-
-                    </div>
-                </div>
-                <div class="menuitems">
-                    <div class="productimg">
-                        <img src="/img/img4.jfif" alt="">
-                    </div>
-                    <h4 class="productname"> item one </h4>
-                    <div class=" btns">
-                        <button class="productdetails">Details</button>
-                        <button class="addbtn">Add</button>
-
-                    </div>
-                </div>
-                <div class="menuitems">
-                    <div class="productimg">
-                        <img src="/img/img4.jfif" alt="">
-                    </div>
-                    <h4 class="productname"> item one </h4>
-                    <div class=" btns">
-                        <button class="productdetails">Details</button>
-                        <button class="addbtn">Add</button>
-
-                    </div>
-                </div>
+      <div class="menubox">
+        <h2 class="menuhead">Our Menu</h2>
+        <div class="menuitembox">
+          <div class="menuitems">
+            <div class="productimg">
+              <img src="/img/img4.jfif" alt="" />
             </div>
+            <h4 class="productname">item one</h4>
+            <div class="btns">
+              <button class="productdetails">Details</button>
+              <button class="addbtn">Add</button>
+            </div>
+          </div>
+          <div class="menuitems">
+            <div class="productimg">
+              <img src="/img/img4.jfif" alt="" />
+            </div>
+            <h4 class="productname">item one</h4>
+            <div class="btns">
+              <button class="productdetails">Details</button>
+              <button class="addbtn">Add</button>
+            </div>
+          </div>
+          <div class="menuitems">
+            <div class="productimg">
+              <img src="/img/img4.jfif" alt="" />
+            </div>
+            <h4 class="productname">item one</h4>
+            <div class="btns">
+              <button class="productdetails">Details</button>
+              <button class="addbtn">Add</button>
+            </div>
+          </div>
+          <div class="menuitems">
+            <div class="productimg">
+              <img src="/img/img4.jfif" alt="" />
+            </div>
+            <h4 class="productname">item one</h4>
+            <div class="btns">
+              <button class="productdetails">Details</button>
+              <button class="addbtn">Add</button>
+            </div>
+          </div>
+          <div class="menuitems">
+            <div class="productimg">
+              <img src="/img/img4.jfif" alt="" />
+            </div>
+            <h4 class="productname">item one</h4>
+            <div class="btns">
+              <button class="productdetails">Details</button>
+              <button class="addbtn">Add</button>
+            </div>
+          </div>
+          <div class="menuitems">
+            <div class="productimg">
+              <img src="/img/img4.jfif" alt="" />
+            </div>
+            <h4 class="productname">item one</h4>
+            <div class="btns">
+              <button class="productdetails">Details</button>
+              <button class="addbtn">Add</button>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <section class="aboutSec" id="aboutSec">
-        <div class="aboutbox">
-            <h2 class="abouthead">About Us</h2>
-            <div class="aboutdivision">
-                <div class="leftabout">
-                    <img src="/img/img4.jfif" alt="aboutusimage">
-                </div>
+      <div class="aboutbox">
+        <h2 class="abouthead">
+          About Us &nbsp;<i class="fa-solid fa-users"></i>
+        </h2>
+        <div class="aboutdivision">
+          <div class="leftabout">
+            <img src="/img/img4.jfif" alt="aboutusimage" />
+          </div>
 
-                <div class="rightabout">
-                    <span>What Make out Clothes Special ?</span>
-                    <p class="aboutdetails">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius architecto
-                        soluta
-                        quas velit molestiae, cupiditate consequatur sit tenetur nobis deleniti fugiat illum!
-                    </p>
-                    <button class="learnmoreabout">Learn More</button>
-                </div>
-            </div>
+          <div class="rightabout">
+            <span>What Make out Clothes Special ?</span>
+            <p class="aboutdetails">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
+              architecto soluta quas velit molestiae, cupiditate consequatur sit
+              tenetur nobis deleniti fugiat illum!
+            </p>
+            <button class="learnmoreabout">
+              Learn More &nbsp;<i class="ri-search-eye-line"></i>
+            </button>
+          </div>
         </div>
+      </div>
     </section>
 
     <section class="productSec" id="productSec">
-        <div class="productbox">
-            <h2 class="producthead">Our Products</h2>
-            <div class="productitembox">
-                <div class="productitems">
-                    <img src="/img/img2.png" alt="">
+      <div class="productbox">
+        <h2 class="producthead">Our Products &nbsp;<i class="ri-shirt-fill"></i></h2>
+        <div class="productitembox">
 
-                    <div class="productbottom">
-                        <h4 class="productname">item no. 2</h4>
-                        <span class="ruppy"> INR : 800 </span>
-                        <button class="addcartbtn"> Add to cart</button>
-                    </div>
-                </div>
-                <div class="productitems">
-                    <img src="/img/img2.png" alt="">
-
-                    <div class="productbottom">
-                        <h4 class="productname">item no. 2</h4>
-                        <span class="ruppy"> INR : 800 </span>
-                        <button class="addcartbtn"> Add to cart</button>
-                    </div>
-                </div>
-                <div class="productitems">
-                    <img src="/img/img2.png" alt="">
-
-                    <div class="productbottom">
-                        <h4 class="productname">item no. 2</h4>
-                        <span class="ruppy"> INR : 800 </span>
-                        <button class="addcartbtn"> Add to cart</button>
-                    </div>
-                </div>
-                <div class="productitems">
-                    <img src="/img/img2.png" alt="">
-
-                    <div class="productbottom">
-                        <h4 class="productname">item no. 2</h4>
-                        <span class="ruppy"> INR : 800 </span>
-                        <button class="addcartbtn"> Add to cart</button>
-                    </div>
-                </div>
+          <div class="productitems">
+            <img src="/img/img2.png" alt="" />
+            <div class="productbottom">
+              <h4 class="productname">item no. 2</h4>
+              <span class="ruppy"> INR : 800 </span>
+              <button class="addcartbtn">
+                Add to cart &nbsp;<i class="ri-shopping-cart-2-line"></i>
+              </button>
             </div>
-        </div>
-    </section>
+          </div>
+          
+          <div class="productitems">
+            <img src="/img/img2.png" alt="" />
+            <div class="productbottom">
+              <h4 class="productname">item no. 2</h4>
+              <span class="ruppy"> INR : 800 </span>
+              <button class="addcartbtn">
+                Add to cart &nbsp;<i class="ri-shopping-cart-2-line"></i>
+              </button>
+            </div>
+          </div>
+          <div class="productitems">
+            <img src="/img/img2.png" alt="" />
+            <div class="productbottom">
+              <h4 class="productname">item no. 2</h4>
+              <span class="ruppy"> INR : 800 </span>
+              <button class="addcartbtn">
+                Add to cart &nbsp;<i class="ri-shopping-cart-2-line"></i>
+              </button>
+            </div>
+          </div>
+          <div class="productitems">
+            <img src="/img/img2.png" alt="" />
+            <div class="productbottom">
+              <h4 class="productname">item no. 2</h4>
+              <span class="ruppy"> INR : 800 </span>
+              <button class="addcartbtn">
+                Add to cart &nbsp;<i class="ri-shopping-cart-2-line"></i>
+              </button>
+            </div>
+          </div>
 
+        </div>
+      </div>
+    </section>
 
     <section class="reviewSec" id="reviewSec">
-        <div class="reviewbox">
-            <h2 class="reviewhead">Customer's Reviews</h2>
-            <div class="reviewitembox">
-                <div class="reviewitems">
-                    <div class="reviewtop">
-                        <div class="img"><img src="/img/WhatsApp Image 2023-07-08 at 10.40.04 PM.jpeg" alt=""></div>
-                        <h3 class="customername">Kuldeep kumar</h3>
-                        <span>icons</span>
-                    </div>
-
-                    <div class="reviewbottom">
-                        <p class="reviewdetails"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni odio ipsum numquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, necessitatibus tempora pariatur, incidunt eum mollitia accusantium ipsum omnis iure enim temporibus quidem impedit dignissimos cum sed nulla voluptates natus doloremque?</p>
-                    </div>
-                </div>
-                <div class="reviewitems">
-                    <div class="reviewtop">
-                        <div class="img"><img src="/img/WhatsApp Image 2023-07-08 at 10.40.04 PM.jpeg" alt=""></div>
-                        <h3 class="customername">Kuldeep kumar</h3>
-                        <span>icons</span>
-                    </div>
-
-                    <div class="reviewbottom">
-                        <p class="reviewdetails"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni odio ipsum numquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, necessitatibus tempora pariatur, incidunt eum mollitia accusantium ipsum omnis iure enim temporibus quidem impedit dignissimos cum sed nulla voluptates natus doloremque?</p>
-                    </div>
-                </div>
-                <div class="reviewitems">
-                    <div class="reviewtop">
-                        <div class="img"><img src="/img/WhatsApp Image 2023-07-08 at 10.40.04 PM.jpeg" alt=""></div>
-                        <h3 class="customername">Kuldeep kumar</h3>
-                        <span>icons</span>
-                    </div>
-
-                    <div class="reviewbottom">
-                        <p class="reviewdetails"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni odio ipsum numquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, necessitatibus tempora pariatur, incidunt eum mollitia accusantium ipsum omnis iure enim temporibus quidem impedit dignissimos cum sed nulla voluptates natus doloremque?</p>
-                    </div>
-                </div>
+      <div class="reviewbox">
+        <h2 class="reviewhead">
+          Customer's Reviews &nbsp; <i class="ri-message-3-line"></i>
+        </h2>
+        <div class="reviewitembox">
+          <div class="reviewitems">
+            <div class="reviewtop">
+              <div class="img">
+                <img
+                  src="/img/WhatsApp Image 2023-07-08 at 10.40.04 PM.jpeg"
+                  alt=""
+                />
+              </div>
+              <h3 class="customername">Kuldeep kumar</h3>
+              <span><i class="ri-chat-smile-fill"></i></span>
             </div>
-        </div>
-    </section>
-</body>
 
+            <div class="reviewbottom">
+              <p class="reviewdetails">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
+                odio ipsum numquam. Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Nam, necessitatibus tempora pariatur, incidunt
+                eum mollitia accusantium ipsum omnis iure enim temporibus quidem
+                impedit dignissimos cum sed nulla voluptates natus doloremque?
+              </p>
+            </div>
+          </div>
+          <div class="reviewitems">
+            <div class="reviewtop">
+              <div class="img">
+                <img
+                  src="/img/WhatsApp Image 2023-07-08 at 10.40.04 PM.jpeg"
+                  alt=""
+                />
+              </div>
+              <h3 class="customername">Kuldeep kumar</h3>
+              <span><i class="ri-chat-smile-fill"></i></span>
+            </div>
+
+            <div class="reviewbottom">
+              <p class="reviewdetails">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
+                odio ipsum numquam. Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Nam, necessitatibus tempora pariatur, incidunt
+                eum mollitia accusantium ipsum omnis iure enim temporibus quidem
+                impedit dignissimos cum sed nulla voluptates natus doloremque?
+              </p>
+            </div>
+          </div>
+          <div class="reviewitems">
+            <div class="reviewtop">
+              <div class="img">
+                <img
+                  src="/img/WhatsApp Image 2023-07-08 at 10.40.04 PM.jpeg"
+                  alt=""
+                />
+              </div>
+              <h3 class="customername">Kuldeep kumar</h3>
+              <span><i class="ri-chat-smile-fill"></i></span>
+            </div>
+
+            <div class="reviewbottom">
+              <p class="reviewdetails">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
+                odio ipsum numquam. Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Nam, necessitatibus tempora pariatur, incidunt
+                eum mollitia accusantium ipsum omnis iure enim temporibus quidem
+                impedit dignissimos cum sed nulla voluptates natus doloremque?
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer is  under working -->
+    <section id="footer">
+      <!-- <img src="img/towel-1838210_1920.jpg" alt="footer images" class="footer-img" /> -->
+
+      <div class="title-text">
+        <!-- <p>contact</p> -->
+        <h1>&nbsp; Visit Shop Today <i class="ri-store-3-fill"></i></h1>
+      </div>
+
+      <div class="footer-row">
+        <div class="footer-left">
+          <h1>opening hours</h1>
+          <p><i class="fa fa-clock-o"></i>Monday to Saturday -9am to 9pm</p>
+          <!-- <p><i class="fa fa-clock-o"></i>Saturday to Sunday -8am to 11pm</p> -->
+        </div>
+        <div class="footer-right">
+          <h1>get in touch</h1>
+          <p>
+            Bahu Akbarpu, Rohtak, HARYANA (INDIA)
+            <i class="fa fa-map-marker"></i>
+          </p>
+          <p>kkharoliya20@gmail.com<i class="fa fa-paper-plane"></i></p>
+          <p>+919728541543<i class="fa fa-phone"></i></p>
+        </div>
+      </div>
+
+      <div class="social-links">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-whatsapp"
+          ><a href="https://wa.me/+919728541543" target="_blank"></a
+        ></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-youtube-play"></i>
+        <p>Copyright MR. KUMAR @ NOVEMBER, 2023</p>
+      </div>
+    </section>
+
+    <script
+      src="https://kit.fontawesome.com/5a2806fb6d.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      let hamcontent = document.querySelector(".hamcontent");
+      let hambtn = document.querySelector(".ham");
+      let closehambtn = document.querySelector(".closehambtn");
+
+      function showhamcontent() {
+        hambtn.style.display = "none";
+        hamcontent.style.display = "flex";
+      }
+      closehambtn.addEventListener("click", closeham);
+      function closeham() {
+        hambtn.style.display = "inline";
+        hamcontent.style.display = "none";
+      }
+    </script>
+  </body>
 </html>
