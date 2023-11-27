@@ -84,11 +84,12 @@
       </header>
       <main>
         <div class="lefthome">
-          <span class="homehead"> Tailor Shop &nbsp; <img src="/img/sewing.png" height="35" alt=""> </span>
+          <span class="homehead"> 
+            <!-- Tailor Shop &nbsp; -->
+            Precision in Every Stitch
+             <img src="/img/sewing.png" height="35" alt=""> </span>
           <p class="description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
-            doloremque iure itaque. Deserunt aliquid similique perspiciatis quam
-            exercitationem doloribus natus ab veritatis
+            Your style journey begins with us. We believe in collaboration, working closely with you to bring your sartorial dreams to life. Your satisfaction is our ultimate goal.
           </p>
           <div class="btns">
             <button class="products">
@@ -188,9 +189,7 @@
           <div class="rightabout">
             <span>What Make out Clothes Special ?</span>
             <p class="aboutdetails">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
-              architecto soluta quas velit molestiae, cupiditate consequatur sit
-              tenetur nobis deleniti fugiat illum!
+              "Fashion that lasts, our pieces are created to stand the test of time with classic style."
             </p>
             <button class="learnmoreabout">
               Learn More &nbsp;<i class="ri-search-eye-line"></i>
@@ -260,7 +259,7 @@
           <div class="reviewitems">
             <div class="reviewtop">
               <div class="img">
-                <img
+                <img id="reviewerimg"
                   src="/img/WhatsApp Image 2023-07-08 at 10.40.04 PM.jpeg"
                   alt=""
                 />
@@ -270,7 +269,7 @@
             </div>
 
             <div class="reviewbottom">
-              <p class="reviewdetails">
+              <p class="reviewdetails ">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
                 odio ipsum numquam. Lorem ipsum dolor sit amet consectetur
                 adipisicing elit. Nam, necessitatibus tempora pariatur, incidunt
@@ -279,50 +278,7 @@
               </p>
             </div>
           </div>
-          <div class="reviewitems">
-            <div class="reviewtop">
-              <div class="img">
-                <img
-                  src="/img/WhatsApp Image 2023-07-08 at 10.40.04 PM.jpeg"
-                  alt=""
-                />
-              </div>
-              <h3 class="customername">Kuldeep kumar</h3>
-              <span><i class="ri-chat-smile-fill"></i></span>
-            </div>
 
-            <div class="reviewbottom">
-              <p class="reviewdetails">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
-                odio ipsum numquam. Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Nam, necessitatibus tempora pariatur, incidunt
-                eum mollitia accusantium ipsum omnis iure enim temporibus quidem
-                impedit dignissimos cum sed nulla voluptates natus doloremque?
-              </p>
-            </div>
-          </div>
-          <div class="reviewitems">
-            <div class="reviewtop">
-              <div class="img">
-                <img
-                  src="/img/WhatsApp Image 2023-07-08 at 10.40.04 PM.jpeg"
-                  alt=""
-                />
-              </div>
-              <h3 class="customername">Kuldeep kumar</h3>
-              <span><i class="ri-chat-smile-fill"></i></span>
-            </div>
-
-            <div class="reviewbottom">
-              <p class="reviewdetails">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
-                odio ipsum numquam. Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Nam, necessitatibus tempora pariatur, incidunt
-                eum mollitia accusantium ipsum omnis iure enim temporibus quidem
-                impedit dignissimos cum sed nulla voluptates natus doloremque?
-              </p>
-            </div>
-          </div>
         </div>
       </div>
     </section>
@@ -369,21 +325,6 @@
       src="https://kit.fontawesome.com/5a2806fb6d.js"
       crossorigin="anonymous"
     ></script>
-
-    <script>
-      let hamcontent = document.querySelector(".hamcontent");
-      let hambtn = document.querySelector(".ham");
-      let closehambtn = document.querySelector(".closehambtn");
-
-      function showhamcontent() {
-        hambtn.style.display = "none";
-        hamcontent.style.display = "flex";
-      }
-      closehambtn.addEventListener("click", closeham);
-      function closeham() {
-        hambtn.style.display = "inline";
-        hamcontent.style.display = "none";
-      }
-    </script>
+<script src="script.js"></script>
   </body>
 </html>
