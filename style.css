@@ -1,7 +1,9 @@
 :root {
   --btnbgcolor: rgb(233 220 127);
-  --themedarkcolor: rgba(255, 85, 0, 0.796);
+  --themedarkcolor: #ff5500cb;
   --themelightcolor: #ebbe78;
+  --btncolor: #af3535;
+  --maincolor:#ffdfac;
 }
 * {
   margin: 0;
@@ -15,7 +17,7 @@ a {
 button {
   padding: 5px 15px;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  color: #af3535;
+  color: var(--btncolor);
   background: var(--btnbgcolor);
   border: 0.6px solid #bcb8b8;
   border-radius: 12px;
@@ -199,7 +201,7 @@ main {
   object-fit: contain;
 }
 .demoimgbox::before {
-  content: "model of the item";
+  content: " We believe in collaboration,";
   padding: 8px 20px;
   position: relative;
   top: 50px;
@@ -210,7 +212,7 @@ main {
   background: whitesmoke;
 }
 .demoimgbox::after {
-  content: "this is a demo item";
+  content: "Just need one chance";
   padding: 8px 20px;
   position: relative;
   bottom: 75px;
@@ -269,7 +271,7 @@ main {
 }
 .productimg {
   width: 99%;
-  height: 70%;
+  height: 66%;
   border-radius: 5px;
   padding: 2px;
   overflow: hidden;
@@ -439,7 +441,7 @@ main {
     var(--themelightcolor),
     var(--themedarkcolor)
   );
-  transition: all .5s;  
+  transition: all 0.5s;
 }
 .allreviewSec {
   height: 100%;
@@ -451,7 +453,6 @@ main {
   z-index: 100;
   background: #0000006b;
 }
-
 .reviewbox,
 .allreviewbox {
   height: 85%;
@@ -473,7 +474,8 @@ main {
   text-align: center;
   margin-bottom: 25px;
 }
-.reviewitembox ,.allreviewitembox {
+.reviewitembox,
+.allreviewitembox {
   width: 100%;
   height: 90vh;
   overflow-y: auto;
@@ -498,7 +500,8 @@ main {
   gap: 4px;
   margin-bottom: 5px;
 }
-.reviewbox .img , .allreviewbox .img {
+.reviewbox .img,
+.allreviewbox .img {
   height: 70%;
   width: 12%;
   border-radius: 50%;
@@ -523,29 +526,28 @@ main {
   padding-left: 8px;
   padding-bottom: 10px;
   background: #00000017;
+  font-family: 'Times New Roman', Times, serif;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   overflow-y: scroll;
 }
-
 .morereviews {
   padding: 6px;
   border-radius: 5px;
-  border: none;
-  /* position: absolute; */
+  border: none; /* position: absolute; */
   margin-top: 15px;
   font-size: 1rem;
-
 }
-.exitreviews{
+.exitreviews {
   position: absolute;
   top: 20px;
-  right:20px;
-  border:none;
-  /* border-radius: 3px; */
+  right: 20px;
+  border: none; /* border-radius: 3px; */
   background: transparent;
-  color:#000;
-  font-size: 2.2rem;
-  /* font-weight: bold; */
-  /* z-index: 111; */
+  color: #000;
+  font-size: 2.2rem; /* font-weight: bold; */ /* z-index: 111; */
 }
 ::-webkit-scrollbar {
   display: none;
@@ -561,7 +563,7 @@ main {
 }
 .reviewbottom p {
   font-size: 1.1rem;
-  font-family: cursive;
+  font-family: 'Times New Roman', Times, serif;
 } /* -------------- media queries------------------ */
 @media (max-width: 550px) {
   .centernav li,

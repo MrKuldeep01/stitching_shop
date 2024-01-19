@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login - stitching shop</title>
+    <style>
+      :root {
+        --btnbgcolor: rgb(233 220 127);
+        --themedarkcolor: #ff5500cb;
+        --themelightcolor: #ebbe78;
+        --btncolor: #af3535;
+        --maincolor: #ffdfac;
+        --whitetext: white;
+      }
+      body {
+        font-family: "Cursive", fantasy;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        background: linear-gradient(
+          45deg,
+          var(--themedarkcolor),
+          var(--themelightcolor)
+        );
+        color: var(--whitetext);
+      }
+
+      .container {
+        width: 100%;
+        max-width: 400px;
+      }
+
+      .card {
+        background:rgba(0, 0, 0, 0.167);
+        padding: 25px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+      a{
+        text-decoration: none;
+        color: inherit;
+      }
+
+      h2 {
+        text-align: center;
+        letter-spacing: 1px;
+        font-weight: normal;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+      }
+
+      input {
+        padding: 10px;
+        margin-bottom: 12px;
+        border: 1px solid #ae8f54;
+        border-radius: 4px;
+        transition: border-color 0.3s ease-in-out;
+        outline: none;
+        font-size: 16px;
+        font-weight: bold;
+        font-family: math;
+        color: black;
+      }
+
+      button {
+        background-color: var(--btnbgcolor);
+        color: var(--btncolor);
+        padding: 10px;
+        border: none;
+        border-radius: 4px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background-color 0.3s ease-in-out;
+      }
+
+      button:hover {
+        scale: .98;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <h2>Login</h2>
+        <form>
+          <input
+            type="text"
+            id="username"
+            name="username"
+            placeholder="Enter your name"
+            required
+          />
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Enter password"
+            
+          />
+          <button type="submit" title="fill both field firstly!" id="submitbtn" onsubmit=""><a href="index.html">Log in </a></button>
+        </form>
+      </div>
+    </div>
+    <script>
+        let submitbtn = document.querySelector('#submitbtn');
+        submitbtn.addEventListener("click", function(event){
+  event.preventDefault();
+
+});
+    </script>
+  </body>
+</html>
