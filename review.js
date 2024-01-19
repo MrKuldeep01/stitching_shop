@@ -243,64 +243,25 @@ for (names of reviewerNames) {
 }
 customerdata = reviewerNames;
 
-// for (i of reviewerNames) {
-//   // console.log(i.imagesrc);
-//   // if (
-//   //   i.imagesrc === undefined ||
-//   //   i.message === undefined ||
-//   //   i.reviewerName === undefined
-//   // ) {
-//   //   i.imagesrc = `img/reviewer/defaultimg.png`;
-
-//   //   i.message = `There are no words to convey my thoughts about the quality of work & gradients that are used . `;
-//   //   i.reviewerName = "Unknown";
-//   // } else {
-//   i.imagesrc = i.imagesrc;
-//   i.message = i.message;
-//   i.reviewerName = i.reviewerName;
-//   // }
-// }
-// let selector = Math.floor(Math.random() * reviewerNames.length);
-// console.log(selector);
-
-// let reviewerimage = document.querySelector("#reviewerimg");
-// let reviewdetails = document.querySelector(".reviewdetails");
-// let reviewername = document.querySelector(".customername");
-
-// reviewerimage.src = "img/reviewer/defaultimg.png";
-// reviewerimage.setAttribute("src", `${reviewerNames[selector].imagesrc}`);
-// // TODO: set this image path to reviewerimage element-------------
-
-// reviewername.innerText = reviewerNames[selector].reviewerName;
-// reviewdetails.innerText = reviewerNames[selector].message;
-
-// Accessing elements in the array
-reviewerNames.forEach((data) => {
-  // console.log(data);
-  // console.log(data.name);
-  // console.log(data.message);
-  // console.log(data.imgsrc);
-});
-
-// let selector = Math.floor(Math.random() * reviewerNames.length);
-// console.log(selector);
 console.log(customerdata);
 let userarray = [];
 for (let i = 0; i < 3; i++) {
-  userarray.push(customerdata[i]);
+  let rn = Math.floor(Math.random()*customerdata.length);
+
+  userarray.push(customerdata[rn]);
   let reviewitems = document.createElement("div");
   reviewitems.innerHTML = `
   <div class="reviewtop">
   <div class="img">
-    <img id="reviewerimg" src="${customerdata[i].imagesrc}"/>
+    <img id="reviewerimg" src="${customerdata[rn].imagesrc}"/>
   </div>
-  <h3 class="customername">${customerdata[i].reviewerName}</h3>
+  <h3 class="customername">${customerdata[rn].reviewerName}</h3>
   <span><i class="ri-chat-smile-fill"></i></span>
 </div>
 
 <div class="reviewbottom">
   <p class="reviewdetails">
-  ${customerdata[i].message}
+  ${customerdata[rn].message}
   </p>
 </div>`;
   reviewitems.classList = "reviewitems";
@@ -358,10 +319,27 @@ morereviews.addEventListener("click", () => {
   });
 
 });
-console.log(morereviews);
-// let reviewerimage = document.querySelector("#reviewerimg");
-// let reviewdetails = document.querySelector(".reviewdetails");
-// let reviewername = document.querySelector(".customername");
+
+for (i of reviewerNames) {
+  if (
+    i.imagesrc === undefined ||
+    i.message === undefined ||
+    i.reviewerName === undefined
+  ) {
+    i.imagesrc = `img/reviewer/defaultimg.png`;
+    i.message = `There are no words to convey my thoughts about the quality of work & gradients that are used . `;
+    i.reviewerName = "mr.parteek";
+  } else {
+  i.imagesrc = i.imagesrc;
+  i.message = i.message;
+  i.reviewerName = i.reviewerName;
+  // }
+}
+let selector = Math.floor(Math.random() * reviewerNames.length);
+
+let reviewerimage = document.querySelector("#reviewerimg");
+let reviewdetails = document.querySelector(".reviewdetails");
+let reviewername = document.querySelector(".customername");
 
 reviewerimage.src = "img/reviewer/defaultimg.png";
 reviewerimage.setAttribute("src", `${reviewerNames[selector].imagesrc}`);
@@ -369,5 +347,5 @@ reviewerimage.setAttribute("src", `${reviewerNames[selector].imagesrc}`);
 
 reviewername.innerText = reviewerNames[selector].reviewerName;
 reviewdetails.innerText = reviewerNames[selector].message;
-
+}
 // reviewsFun();
