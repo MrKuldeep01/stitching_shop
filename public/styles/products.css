@@ -14,9 +14,9 @@ body {
   width: 100%;
   min-height: 100vh;
 }
-#home {
+#home  {
   position: fixed;
-  bottom: 10px;
+  bottom: 39px;
   left: 10px;
   padding: 5px 8px;
   border-radius: 8px;
@@ -28,7 +28,7 @@ body {
 }
 .social-links {
   text-align: center;
-  width: 100%;
+  width: 100%;    
 }
 .social-links .fa,
 #home {
