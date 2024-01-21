@@ -43,8 +43,7 @@ function mainDescFun() {
     "Step into a world where fashion transcends trends. Our timeless designs are crafted to endure, becoming cherished pieces in your wardrobe.",
     "Your style journey begins with us. We believe in collaboration, working closely with you to bring your sartorial dreams to life. Your satisfaction is our ultimate goal.",
     "Beyond beauty, we care for the world we live in. Our sustainable practices ensure that your fashion choices contribute to a better, more responsible future.",
-    (message =
-      "Explore our collections and discover the art of tailoring that goes beyond the ordinary. Elevate your style with Naresh Tailor Shop's craft something extraordinary together."),
+    "Explore our collections and discover the art of tailoring that goes beyond the ordinary. Elevate your style with Naresh Tailor Shop's craft something extraordinary together.",
   ];
   let selectdescription = Math.floor(Math.random() * descriptions.length);
   description.innerText = descriptions[selectdescription];
@@ -76,7 +75,6 @@ function thoughtFun() {
   thought.innerText = thoughts[selectthought];
   // console.log();
 }
-
 
 mainHeadFun();
 mainDescFun();

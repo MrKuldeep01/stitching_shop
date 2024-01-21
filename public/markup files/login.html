@@ -34,12 +34,12 @@
       }
 
       .card {
-        background:rgba(0, 0, 0, 0.167);
+        background: rgba(0, 0, 0, 0.167);
         padding: 25px;
         border-radius: 8px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       }
-      a{
+      a {
         text-decoration: none;
         color: inherit;
       }
@@ -67,11 +67,17 @@
         font-family: math;
         color: black;
       }
+      .buttons{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+      }
 
       button {
         background-color: var(--btnbgcolor);
         color: var(--btncolor);
-        padding: 10px;
+        padding: 10px 17px;
         border: none;
         border-radius: 4px;
         font-weight: bold;
@@ -80,7 +86,7 @@
       }
 
       button:hover {
-        scale: .98;
+        scale: 0.98;
       }
     </style>
   </head>
@@ -101,18 +107,20 @@
             id="password"
             name="password"
             placeholder="Enter password"
-            
           />
-          <button type="submit" title="fill both field firstly!" id="submitbtn" onsubmit=""><a href="index.html">Log in </a></button>
+          <div class="buttons">
+            <button title="go to home page" id="home">
+              <a href="https://stitchingshop.netlify.app"> Cancel </a>
+            </button>
+
+          <button type="submit" title="fill both field firstly!" id="submitbtn">
+            <a href="https://stitchingshop.netlify.app"> Log in </a>
+          </button>
+          
+          </div>
         </form>
       </div>
+      
     </div>
-    <script>
-        let submitbtn = document.querySelector('#submitbtn');
-        submitbtn.addEventListener("click", function(event){
-  event.preventDefault();
-
-});
-    </script>
   </body>
 </html>

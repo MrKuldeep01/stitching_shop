@@ -164,12 +164,12 @@ main {
   text-align: center;
   margin: 15px 1px;
 }
-.btns {
+.btnsHome ,.btnsMenu {
   display: flex;
   width: 100%;
   justify-content: space-between;
 }
-.btns button {
+.btnsHome button ,.btnsMenu button  {
   padding: 5px 15px;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   color: #af3535;
@@ -178,7 +178,7 @@ main {
   border-radius: 12px;
   cursor: pointer;
 }
-.btns button:active {
+.btnsHome button:active ,.btnsMenu button:active {
   scale: 0.97;
 }
 .righthome {
@@ -256,7 +256,7 @@ main {
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
-.menuitems {
+.menuitems , .productitems {
   height: 250px;
   width: 265px;
   border-radius: 5px;
@@ -266,9 +266,11 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
   gap: 7px;
   background: whitesmoke;
 }
+
 .productimg {
   width: 99%;
   height: 66%;
@@ -276,7 +278,10 @@ main {
   padding: 2px;
   overflow: hidden;
 }
-.productimg img {
+.menuitemimg{
+  height: 75%;
+}
+.productimg img ,.productitems img{
   height: 100%;
   width: 100%;
   object-fit: contain;
@@ -391,7 +396,7 @@ main {
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
-.productitems {
+/* .productitems {
   width: 220px;
   height: 210px;
   text-align: center;
@@ -400,12 +405,12 @@ main {
   border: none;
   margin: 10px;
   padding: 20px;
-}
-.productitems img {
+} */
+/* .productitems img {
   height: 60%;
   border-radius: 8px;
-  border: none; /* padding: 2px; */
-}
+  border: none;
+} */
 .productbottom {
   display: flex;
   flex-direction: column;
@@ -565,6 +570,26 @@ main {
   font-size: 1.1rem;
   font-family: 'Times New Roman', Times, serif;
 } /* -------------- media queries------------------ */
+
+@media (max-width: 380px) {
+
+.btnsHome{
+  margin:1.4rem 0rem;
+  flex-direction: column;
+  gap:10px;
+}
+.btnsHome button{
+  padding: 10px 17px;
+  border-radius: 8px;
+}
+.btnsHome>button>a{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+}
+
 @media (max-width: 550px) {
   .centernav li,
   .rightnav > .login {

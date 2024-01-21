@@ -243,7 +243,7 @@ for (names of reviewerNames) {
 }
 customerdata = reviewerNames;
 
-console.log(customerdata);
+// console.log(customerdata);
 let userarray = [];
 for (let i = 0; i < 3; i++) {
   let rn = Math.floor(Math.random()*customerdata.length);
