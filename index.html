@@ -8,6 +8,11 @@
     <link rel="web icon" href="/img/needlewebicon.png" />
     <link
       rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css
+    "
+    />
+    <link
+      rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css"
       integrity="sha512-HXXR0l2yMwHDrDyxJbrMD9eLvPe3z3qL3PPeozNTsiHJEENxx8DH2CxmV05iwG0dwoz5n4gQZQyYLUNt1Wdgfg=="
       crossorigin="anonymous"
@@ -15,7 +20,7 @@
     />
   </head>
 
-  <body>
+  <body data-scroll-container>
     <section class="homeSec" id="homeSec">
       <header>
         <nav>
@@ -77,15 +82,17 @@
               <a href="#reviewSec">
                 <li class="navitems">Reviews</li>
               </a>
-              <button class="login"><a href="/public/markup files/login.html">
-                Log in &nbsp;<i class="fa-solid fa-user-tie"></i></a>
+              <button class="login">
+                <a href="/public/markup files/login.html">
+                  Log in &nbsp;<i class="fa-solid fa-user-tie"></i
+                ></a>
               </button>
             </div>
           </div>
         </nav>
       </header>
       <main>
-        <div class="lefthome">
+        <div class="lefthome" data-scroll data-scroll-speed="1" data-scroll-direction="horizontal">
           <span class="homehead">
             <!-- Tailor Shop &nbsp; -->
             Precision in Every Stitch
@@ -109,7 +116,7 @@
             </button>
           </div>
         </div>
-        <div class="righthome">
+        <div class="righthome" data-scroll data-scroll-speed="-2" data-scroll-direction="horizontal">
           <div class="demoimgbox">
             <img src="/img/img2.png" alt="demoimg" />
           </div>
@@ -121,10 +128,12 @@
       <div class="menubox">
         <h2 class="menuhead">Our Menu</h2>
         <div class="menuitembox">
-          <div class="buttons" style="width: 100%; text-align: center;">
-            <button title=" More products availabe now!" id="productsBtn">
-              <a href="/public/markup files/products.html" target="_blank">More Products</a>
-            </button>      
+          <div class="buttons" style="width: 100%; text-align: center">
+            <button title=" More products availabe now!" id="productsBtn" >
+              <a href="/public/markup files/products.html" target="_blank" 
+                >More Products</a
+              >
+            </button>
           </div>
         </div>
       </div>
@@ -136,7 +145,7 @@
           About Us &nbsp;<i class="fa-solid fa-users"></i>
         </h2>
         <div class="aboutdivision">
-          <div class="leftabout">
+          <div class="leftabout" data-scroll data-scroll-speed=".7" data-scroll-direction="horizontal">
             <img src="/img/img4.jfif" alt="aboutusimage" />
           </div>
 
@@ -155,7 +164,7 @@
         </div>
       </div>
     </section>
-<!-- 
+    <!-- 
     <section class="productSec" id="productSec">
       <div class="productbox">
         <h2 class="producthead">
@@ -263,12 +272,13 @@
         <p>Copyright MR. KUMAR @ NOVEMBER, 2023</p>
       </div>
     </section>
-
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
     <script
       src="https://kit.fontawesome.com/5a2806fb6d.js"
       crossorigin="anonymous"
     ></script>
     <script src="/public/scripts/script.js"></script>
+    <script src="/public/scripts/global.js"></script>
     <script src="/public/scripts/menu.js"></script>
     <script src="/public/scripts/review.js"></script>
   </body>
