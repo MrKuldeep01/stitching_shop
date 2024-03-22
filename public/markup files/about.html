@@ -5,14 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About page - Stitching shop</title>
     <link rel="stylesheet" href="/public/styles/about.css" />
-    <link rel="web icon" href="/img/needlewebicon.png" />
+    <link rel="web icon" href="/img/needlewebicon.png" /> <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css
+  "
+  />
   </head>
-  <body>
+  <body data-scroll-container>
     
     <!-- Header (SECTION 1/3) -->
     <header class="masthead">
       <p class="masthead-intro">Hi, I'm</p>
-      <h1 class="masthead-heading">Kuldeep</h1>
+      <h1 class="masthead-heading"  data-scroll data-scroll-speed="1" data-scroll-direction="horizontal">Kuldeep</h1>
     </header>
 
     <!-- the div is used to apply the gradient -->
@@ -42,7 +46,7 @@
         </p>
       </section>
 
-      <section>
+      <section data-scroll data-scroll-speed="2" data-scroll-direction="horizontal">
         <h2>Where I'm From</h2>
         <p class="space-maker">Bahu Akbarpur Rohtak, HARYANA (INDIA)</p>
       </section>
@@ -77,5 +81,7 @@
     src="https://kit.fontawesome.com/5a2806fb6d.js"
     crossorigin="anonymous"
   ></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <script src="/public/scripts/global.js"></script>
   </body>
 </html>

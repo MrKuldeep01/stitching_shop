@@ -6,7 +6,11 @@
     <title>Products - Stitching Shop</title>
     <link rel="web icon" href="/img/needlewebicon.png" />
     <link rel="stylesheet" href="/public/styles/style.css">
-    <link rel="stylesheet" href="/public/styles/products.css">
+    <link rel="stylesheet" href="/public/styles/products.css"> <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css
+  "
+  />
     <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css"
@@ -15,7 +19,7 @@
     referrerpolicy="no-referrer"
   />
   </head>
-  <body>
+  <body data-scroll-container>
     <header>
       <nav>
         <div class="leftnav">
@@ -75,7 +79,7 @@
           <div class="productitembox">
            <!-- __________  Script se aarha he saman 😂 -->
            
-            <button title="go to home page" id="home" >
+            <button title="go to home page" id="home"  data-scroll data-scroll-speed="-18" data-scroll-direction="vartical">
               <a href="https://stitchingshop.netlify.app" target="_blank"><i class="fa fa-home"></i
                 ></a>
             </button>
@@ -87,7 +91,7 @@
     <!-- Footer (SECTION 3/3) -->
   <footer id="footer" style="background: linear-gradient(-45deg, var(--themedarkcolor), var(--btncolor));">
       <!-- <p>My Github account : </p> -->
-      <div class="social-links">
+      <div class="social-links" data-scroll data-scroll-speed="-2" data-scroll-direction="horizontal">
         <a href="https://facebook.com/kuldeep.kharoliya.144/" target="_blank"
           ><i class="fa fa-facebook"></i
         ></a>
@@ -101,7 +105,7 @@
           ><i class="fa fa-telegram"></i
         ></a>
         <!-- <i class="fa fa-youtube-play"></i> -->
-        <p>Copyright MR. KUMAR @ NOVEMBER, 2023</p>
+        <p style="color: white;">Copyright MR. KUMAR @ NOVEMBER, 2023</p>
       </div>
     </footer>
       <script src="/public/scripts/menu.js"></script>
@@ -111,11 +115,7 @@
       src="https://kit.fontawesome.com/5a2806fb6d.js"
       crossorigin="anonymous"
     ></script>
-    <script>
-        // let maleBtn = document.querySelector(".male");
-        // let femaleBtn = document.querySelector(".female");
-        // let = allBtn = document.querySelector(".forAll");
-
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <script src="/public/scripts/global.js"></script>
   </body>
 </html>
