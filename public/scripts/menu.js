@@ -52,6 +52,8 @@ setMenuItems();
 let savedItems = [];
 function showDetails(obj){
   let cardbox = document.querySelector('.cardContainer');
+  console.log(obj,cardbox)
+  console.log("clickeed");
   let card = `
   <div id="card">
   <img src="${obj.itemimg}">
@@ -63,13 +65,13 @@ function showDetails(obj){
   </div>
   `;
   cardbox.innerHTML = card;
-  cardbox.style.left = 0;
+  cardbox.style.left = "0%";
   cardbox.style.zIndex =99 ;
   let backbtn = cardbox.querySelector(".backbtn");
-  backbtn.addEventListener("click",(e)=>{
+  backbtn.addEventListener("click",()=>{
     cardbox.innerHTML = null;
   cardbox.style.left = "-100%";
-  cardbox.style.zIndex =-99 ;
+  // cardbox.style.zIndex =-99 ;
   })
 }
 

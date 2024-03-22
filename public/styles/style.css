@@ -299,7 +299,7 @@ main {
 }
 /* ----------------------------------------------- card for show details of products ------------ */
 
-.cardContainer{
+.cardContainer {
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -324,8 +324,8 @@ a{
 
 #card{
   border-radius: 12px;
-  height: 60%;
-  width: 50%;
+  height: 85%;
+  width: 70%;
   background-color: white;
   padding: 1rem;
   display: flex;
