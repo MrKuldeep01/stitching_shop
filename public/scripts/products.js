@@ -115,8 +115,8 @@ function cartHandeler() {
         alt=""
       />
     </div>
-    <span class="pro-name">${elm.itemName}</span>
-    <span class="pro-price">${elm.price}</span>
+    <span class="pro-name">Item name : ${elm.itemName}</span>
+    <span class="pro-price">Price : ${elm.price} <i class="ri-money-rupee-circle-line"></i></span>
     <button id="contect">
       <a href="https://wa.me/9728541543" target="_blank"
         >Contect now &nbsp<i
