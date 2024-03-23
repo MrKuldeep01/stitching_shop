@@ -143,7 +143,7 @@ function setNotification(){
   
   if((savedItems.length)>0){
     cartbtn.style.display= "block";
-    cartbtn.innerHTML = `<i class="ri-shopping-bag-line"></i><span class="notify">${savedItems.length}</span>`;
+    cartbtn.innerHTML = `<i class="ri-shopping-bag-line"></i><span class="notify">${(savedItems.length<10)? "0"+(savedItems.length) : savedItems.length }</span>`;
   }
 }
 

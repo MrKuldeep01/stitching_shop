@@ -491,12 +491,15 @@ a {
   display: none;
   position: relative;
 }
-.cartbtn .span {
+.cartbtn span {
   position: absolute;
-  top: -1%;
-  right: -2%;
+  padding: .2rem;
+  font-family: monospace;
+  top: -40%;
+  right: -25%;
   border-radius: 50%;
-  background: var(--themedarkcolor);
+  background: red;
+  color: white;
 }
 .productbox {
   width: 98%;
@@ -572,11 +575,13 @@ a {
   right: -100%;
   display: flex;
   align-items: flex-start;
-  justify-content: flex-start;
+  justify-content: center;
   padding: 2rem;
   gap: 1rem;
   flex-wrap: wrap;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
 }
 .backbtn{
   position: absolute;
