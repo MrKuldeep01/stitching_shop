@@ -1,3 +1,5 @@
+let savedItems = [];
+
 let productItemArray = [
   {
     itemName: "Blugiallo Trouser Cotton",
@@ -56,7 +58,6 @@ let productItemArray = [
     category: "male",
   },
 ];
-let savedProducts = [];
 
 let productitembox = document.querySelector(".productitembox");
 function setProductItem() {
@@ -86,7 +87,7 @@ function showDetails(obj) {
     <h1> Category :  ${obj.category}</h1>
     <p>Item Name : ${obj.itemName}</p>
     <h5>Price : ${obj.price}<i class="ri-money-rupee-circle-line"></i></h5>
-    <button id="contect"><a href="https://wa.me/9728541543" target="_blank">Contect now &nbsp<i style="color:white;" class="ri-whatsapp-line"></i></a></button>
+    <button id="contect" onClick="${savedItems.push(obj)}">Save now</button>
     <a href="#productSec" class='backbtn'> Back &nbsp; <i class="ri-home-smile-fill"></i></a>
     </div>
     `;
@@ -100,15 +101,68 @@ function showDetails(obj) {
     // cardbox.style.zIndex =-99 ;
   });
 }
+function cartHandeler() {
+  let cartBox = document.querySelector(".content");
+  savedItems.forEach((elm) => {
+    cartBox.style.right="0%";
+  cartBox.style.zIndex = 99;
+
+    let cart = `
+    <div class="pro-item-inner" data-id="product1">
+    <div class="pro-img">
+      <img
+        src="${elm.itemimg}"
+        alt=""
+      />
+    </div>
+    <span class="pro-name">${elm.itemName}</span>
+    <span class="pro-price">${elm.price}</span>
+    <button id="contect">
+      <a href="https://wa.me/9728541543" target="_blank"
+        >Contect now &nbsp<i
+          style="color: white"
+          class="ri-whatsapp-line"
+        ></i
+      ></a>
+    </button>
+    </div>
+  </div>
+    `;
+    cartBox.innerHTML += cart;
+    let backbtn = cartBox.querySelector(".backbtn");
+
+    backbtn.addEventListener("click", () => {
+      cartBox.style.left = "-100%";
+      // cartBox.style.zIndex =-99 ;
+    });
+  });
+}
+
+function setNotification(){
+  let cartbtn = document.querySelector(".cartbtn");
+  
+  if((savedItems.length)>0){
+    cartbtn.style.display= "block";
+    cartbtn.innerHTML = `<i class="ri-shopping-bag-line"></i><span class="notify">${savedItems.length}</span>`;
+  }
+}
+
 
 function handelSaveEvent(evt) {
   let dataIndex = evt.target.getAttribute("data-index");
   if (evt.target.classList.contains("savebtn")) {
+    if(savedItems.filter((a)=> {
+      
+      console.log(a);
+    return  a.itemName != a.itemName;
+    })){
     savedItems.push(productItemArray[dataIndex]);
-    console.log(savedItems);
+    setNotification();
+    }
   } else {
     showDetails(productItemArray[dataIndex]);
   }
 }
+
 productitembox.addEventListener("click", handelSaveEvent);
 setProductItem();

@@ -11,13 +11,10 @@
     href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css
   "
   />
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css"
-    integrity="sha512-HXXR0l2yMwHDrDyxJbrMD9eLvPe3z3qL3PPeozNTsiHJEENxx8DH2CxmV05iwG0dwoz5n4gQZQyYLUNt1Wdgfg=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
-  />
+  <link
+  href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+  rel="stylesheet"
+/>
   </head>
   <body data-scroll-container>
     <header>
@@ -47,7 +44,7 @@
         </div>
 
         <div class="rightnav">
-          </button>
+          <button class="cartbtn" onclick="cartHandeler()"><i class="ri-shopping-bag-line"></i></button>
           <button class="ham" onclick="showhamcontent()">
             <i class="fa-solid fa-bars"></i>
           </button>
@@ -79,6 +76,7 @@
             Our Products &nbsp;<i class="ri-shirt-fill"></i>
           </h2>
           <div class="productitembox">
+            
            <!-- __________  Script se aarha he saman 😂 -->
            
             <button title="go to home page" id="home"  data-scroll data-scroll-speed="-18" data-scroll-direction="vartical">
@@ -100,6 +98,30 @@
   
     <!-- ================================================/card============================ -->
 
+    <!-- ================================================ cart functioning ========================== -->
+    <div class="content">
+    <a href="#productSec" class='backbtn'> <&nbsp; <i class="ri-back-fill"></i></a>
+
+      <!-- <div class="pro-item-inner" data-id="product1">
+        <div class="pro-img">
+          <img
+            src="https://www.apetogentleman.com/wp-content/uploads/2023/06/ArtisanalMenswear10.jpg"
+            alt=""
+          />
+        </div>
+        <span class="pro-name">Apple iPhone X</span>
+        <span class="pro-price">$998</span>
+        <button id="contect">
+          <a href="https://wa.me/9728541543" target="_blank"
+            >Contect now &nbsp<i
+              style="color: white"
+              class="ri-whatsapp-line"
+            ></i
+          ></a>
+        </button>
+      </div> -->
+    </div>
+    <!-- ====================================================================================== -->
     <!-- Footer (SECTION 3/3) -->
   <footer id="footer" style="background: linear-gradient(-45deg, var(--themedarkcolor), var(--btncolor));">
       <!-- <p>My Github account : </p> -->
