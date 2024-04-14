@@ -12,15 +12,55 @@
     />
   </head>
   <body>
-    <div class="container">
-      <div class="card">
+    <div class="containerLogin">
+      <div class="card logincard">
         <h2>Login</h2>
-        <form>
+        <form id="loginform">
+          <input
+            type="number"
+            id="phonelog"
+            name="phone"
+            placeholder="Enter your phone no."
+            required
+          />
+          <input
+            type="password"
+            id="passwordlog"
+            name="password"
+            placeholder="Enter password"
+          />
+          <div class="buttons">
+            <button title="go to home page" class="backbtn>
+              <a href="https://stitchingshop.netlify.app"> Cancel </a>
+            </button>
+
+            <button title="Register here" id="registerbtn">
+            Register 
+            </button>
+
+          <button type="submit" title="fill both field firstly!" id="submitbtn">
+            <!-- <a href="https://stitchingshop.netlify.app"> Log in </a> -->
+            Log in
+          </button>
+          
+          </div>
+        </form>
+      </div>
+      <div class="registercard card ">
+        <h2>Register</h2>
+        <form id="registerform">
           <input
             type="text"
-            id="username"
-            name="username"
+            id="name"
+            name="name"
             placeholder="Enter your name"
+            required
+          />
+          <input
+            type="number"
+            id="phone"
+            name="phone"
+            placeholder="Enter your phone no." 
             required
           />
           <input
@@ -30,20 +70,21 @@
             placeholder="Enter password"
           />
           <div class="buttons">
-            <button title="go to home page" id="home">
+            <button title="go to home page" class="backbtn">
               <a href="https://stitchingshop.netlify.app"> Cancel </a>
             </button>
 
-          <button type="submit" title="fill both field firstly!" id="submitbtn">
-            <a href="https://stitchingshop.netlify.app"> Log in </a>
-          </button>
-          
+            <button title="Register here" type="submit">
+              <!-- <a href="https://stitchingshop.netlify.app"> Register </a> -->
+              Register
+            </button>
+                    
           </div>
         </form>
       </div>
-      
     </div>
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
     <script src="/public/scripts/global.js"></script>
+    <script src="/public/scripts/login.js"></script>
   </body>
 </html>

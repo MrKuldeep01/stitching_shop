@@ -21,9 +21,10 @@
     color: var(--whitetext);
   }
 
-  .container {
+  .containerLogin {
     width: 100%;
     max-width: 400px;
+    transition: all .8s;
   }
 
   .card {
@@ -31,6 +32,14 @@
     padding: 25px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  .registercard{
+    /* position: absolute;
+    left:-100%;
+    top:50%;
+    backdrop-filter: blur(12px);
+    transform: translate(-50%,-50%); */
+   display: none;
   }
   a {
     text-decoration: none;
