@@ -33,14 +33,14 @@ let menuitembox = document.querySelector(".menuitembox");
 
 function setMenuItems() {
   menuItemArray.forEach((item, index) => {
-    let menuitems = `<div class="menuitems">
+    let menuitems = ` <div class="menuitems">
       <div data-index="${index}" class="productimg menuitemimg">
         <img src="${item.itemimg}" data-index="${index}" />
       </div>
       <h4 data-index="${index}" class="menuitemname productname">${item.itemName}</h4>
-      <div class="btnsMenu">
+      <div class="btnsMenus">
         <button data-index="${index}" class="menuitemdetails productdetails">Details</button>
-        <button data-index="${index}" class="savebtn">Save item</button>
+        <!--<button data-index="${index}" class="savebtn">Save item</button> -->
       </div>
     </div>`;
     menuitembox.innerHTML += menuitems;

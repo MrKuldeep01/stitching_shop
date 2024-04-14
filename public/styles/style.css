@@ -181,6 +181,15 @@ main {
   width: 100%;
   justify-content: space-between;
 }
+.btnsMenus{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.btnsMenus button{
+  width: 100%;
+  border-radius: 8px;
+}
 .btnsHome button,
 .btnsMenu button {
   padding: 5px 15px;
@@ -291,6 +300,7 @@ main {
   padding: 2px 5px;
   display: flex;
   flex-direction: column;
+  padding: .4rem .6rem;
   align-items: center;
   justify-content: center;
   text-align: center;
