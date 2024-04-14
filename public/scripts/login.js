@@ -43,8 +43,7 @@ loginForm.addEventListener("submit", async (evt) => {
     console.log(phone);
     console.log(userpass);
     if (userpass == pass) {
-    //   window.location.href = "https://stitchingshop.netlify.app";
-      window.location.href = "http://localhost:5500/index.html";
+      window.location.href = "https://stitchingshop.netlify.app";
       localStorage.setItem("isLogIn", "true");
     }
     else{
