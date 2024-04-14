@@ -2,21 +2,29 @@ let hamcontent = document.querySelector(".hamcontent");
 let hambtn = document.querySelector(".ham");
 let closehambtn = document.querySelector(".closehambtn");
 function isLogInFun(){
+  console.log("login");
   let isLogIn = localStorage.getItem("isLogIn");
-  if (!isLogIn) {
-    localStorage.setItem("isLogIn", false);
-  } else if (isLogIn == true) {
-    let user = localStorage.getItem("user");
-    alert("welcome "+ user.name)
+  if (isLogIn === "true") {
     document.querySelectorAll(".login").forEach((elm) => {
       elm.style.display = "none";
-      console.log(elm);
-      console.log("hidded element: "+elm);
+    });
+    document.querySelectorAll(".logout").forEach((elm) => {
+      elm.style.display = "block";
+    });
+  }
+  else{
+    document.querySelectorAll(".login").forEach((elm) => {
+      elm.style.display = "block";
+    });
+    document.querySelectorAll(".logout").forEach((elm) => {
+      elm.style.display = "none";
     });
   }
 };
   isLogInFun();
-
+function logoutFun(){
+  localStorage.setItem("isLogIn","false");
+}
 
 // document.querySelectorAll(".login").forEach((elm) => {
 //         elm.style.display = "none";
