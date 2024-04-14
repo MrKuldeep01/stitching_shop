@@ -1,17 +1,16 @@
 let hamcontent = document.querySelector(".hamcontent");
 let hambtn = document.querySelector(".ham");
 let closehambtn = document.querySelector(".closehambtn");
-window.onloadedmetadata((e)=>{
+window.addEventListener("loadedmetadata", (e) => {
   let isLogIn = localStorage.getItem("isLogIn");
-if(!isLogIn){
-  localStorage.setItem("isLogIn",false);
-}
-else if(isLogIn==true){
-  document.querySelectorAll("login").forEach((elm)=>{
-    elm.style.display="none";
-  })
-}
-})
+  if (!isLogIn) {
+    localStorage.setItem("isLogIn", false);
+  } else if (isLogIn == true) {
+    document.querySelectorAll("login").forEach((elm) => {
+      elm.style.display = "none";
+    });
+  }
+});
 
 function showhamcontent() {
   hambtn.style.display = "none";
