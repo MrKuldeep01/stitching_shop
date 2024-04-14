@@ -6,6 +6,8 @@ function isLogInFun(){
   if (!isLogIn) {
     localStorage.setItem("isLogIn", false);
   } else if (isLogIn == true) {
+    let user = localStorage.getItem("user");
+    alert("welcome "+ user.name)
     document.querySelectorAll(".login").forEach((elm) => {
       elm.style.display = "none";
       console.log(elm);

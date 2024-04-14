@@ -20,6 +20,7 @@ registerForm.addEventListener("submit", async (evt) => {
   console.log(`phon: ${phone}, pass: ${pass}`);
   let userdata = { phone: phone, name: name, pass: pass };
   registeredUser.push(userdata);
+  localStorage.setItem("user",{name:name,phone:phone,pass:pass})
   await localStorage.setItem(phone, pass);
   let registerCard = document.querySelector(".registercard");
   let loginCard = document.querySelector(".logincard");
@@ -44,6 +45,9 @@ loginForm.addEventListener("submit", async (evt) => {
     if (userpass == pass) {
       window.location.href = "https://stitchingshop.netlify.app";
       localStorage.setItem("isLogIn", "true");
+    }
+    else{
+        alert("wrong Password or Phone")
     }
   }
 });
