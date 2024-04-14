@@ -780,6 +780,7 @@ a {
 } /* -------------- media queries------------------ */
 
 @media (max-width: 380px) {
+ 
   .btnsHome {
     margin: 1.4rem 0rem;
     flex-direction: column;
@@ -797,6 +798,13 @@ a {
 }
 
 @media (max-width: 550px) {
+  .out{
+    display: none !important;  
+  }
+  .rightnav{
+    display: flex;
+    gap: .4rem;
+  }
   .centernav li,
   .rightnav > .login {
     padding: 1px 5px;

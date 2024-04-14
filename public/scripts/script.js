@@ -25,13 +25,6 @@ function isLogInFun(){
 function logoutFun(){
   localStorage.setItem("isLogIn","false");
 }
-
-// document.querySelectorAll(".login").forEach((elm) => {
-//         elm.style.display = "none";
-//         // console.log(elm.style.display="none");
-//       });
-
-
 function showhamcontent() {
   hambtn.style.display = "none";
   hamcontent.style.display = "flex";
